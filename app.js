@@ -51,21 +51,21 @@ app.put('/users/:id', (req, res) => {
 
 //hostelUsers
 app.get('/hosteluser', (req, res) => {
-    queries.getAllUsers().then(response => res.send(response))
+    queries.getAllHostelUsers().then(response => res.send(response))
 })
 app.get('/hosteluser/:id', (req, res) => {
-    queries.getUserById(req.params.id).then(hostelUser => res.status(200).send(hostelUser[0]))
+    queries.getHostelUserById(req.params.id).then(hostelUser => res.status(200).send(hostelUser[0]))
 })
 app.post('/hosteluser', (req, res) => {
-    queries.createUser(req.body).then(hostelUser => {
+    queries.createHostelUser(req.body).then(hostelUser => {
         res.send(hostelUser[0])
     })
 })
 app.delete('/hosteluser/:id', (req, res) => {
-    queries.deleteUser(req.params.id).then(() => res.status(204).send())
+    queries.deleteHostelUser(req.params.id).then(() => res.status(204).send())
 })
 app.put('/hosteluser/:id', (req, res) => {
-    queries.editUser(req.params.id, req.body).then(editHostelUser => res.json(editHostelUser))
+    queries.editHostelUser(req.params.id, req.body).then(editHostelUser => res.json(editHostelUser))
 })
 
 
