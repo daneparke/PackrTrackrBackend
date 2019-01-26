@@ -2,8 +2,8 @@ exports.up = function (knex, Promise) {
     return knex.schema.createTable('hostels', (hostel) => {
         hostel.increments('id')
         hostel.string('name')
-        hostel.float('latitude')
-        hostel.float('longitude')
+        hostel.double('latitude')
+        hostel.double('longitude')
         hostel.string('image')
     })
 }
