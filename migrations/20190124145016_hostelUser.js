@@ -3,6 +3,7 @@ exports.up = function (knex, Promise) {
         hostelUser.increments('id')
         hostelUser.integer('hostel_id').references('id').inTable('hostels').onDelete('cascade')
         hostelUser.integer('user_id').references('id').inTable('users').onDelete('cascade')
+        hostelUser.string('review')
     })
 }
 

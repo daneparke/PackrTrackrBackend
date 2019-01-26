@@ -119,6 +119,19 @@ exports.seed = function (knex, Promise) {
           checkin_status: true,
           whats_app_number: '17045266868',
         },
+        {
+          first_name: "Kylie",
+          last_name: "Ryan",
+          email: "kylie@email.com",
+          password: "password",
+          country: "Italy",
+          admin: false,
+          profile_image: "https://randomuser.me/api/portraits/women/12.jpg",
+          about_me: "Hi I am Kylie",
+          travel_status: true,
+          checkin_status: true,
+          whats_app_number: '17045266868',
+        },
       ]);
     });
 };

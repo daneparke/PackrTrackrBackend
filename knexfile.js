@@ -1,15 +1,13 @@
-// Update with your config settings.
 
 module.exports = {
 
   development: {
     client: 'pg',
-    connection: {
-      filename: 'postgresql://localhost/PACKRTRACKR'
-    }
+    connection: 'postgresql://localhost/PACKRTRACKR'
+
   },
   production: {
-    client: 'postgresql',
+    client: 'pg',
     connection: process.env.DATABASE_URL
   }
 };

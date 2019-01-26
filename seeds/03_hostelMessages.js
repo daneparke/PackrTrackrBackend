@@ -32,7 +32,7 @@ exports.seed = function (knex, Promise) {
         },
         {
           hostel_id: 1,
-          user_id: 7,
+          user_id: 6,
           messageBody: 'What is the easiest resort to get to from Denver?'
         },
         {
