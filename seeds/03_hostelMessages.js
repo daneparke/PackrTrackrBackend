@@ -27,7 +27,7 @@ exports.seed = function (knex, Promise) {
         },
         {
           hostel_id: 1,
-          user_id: 7,
+          user_id: 2,
           messageBody: "Does anyone want to go ski/snowboard?"
         },
         {
