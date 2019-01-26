@@ -8,7 +8,7 @@ exports.seed = function (knex, Promise) {
         {
           latitude: 1,
           longitude: 23,
-          name: 'first'
+          name: "first"
         },
       ]);
     });

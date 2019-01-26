@@ -8,37 +8,37 @@ exports.seed = function (knex, Promise) {
         {
           hostel_id: 1,
           user_id: 3,
-          messageBody: 'Anyone want to go to Boulder tomorrow?'
+          messageBody: "Anyone want to go to Boulder tomorrow?"
         },
         {
           hostel_id: 1,
           user_id: 3,
-          messageBody: 'Anyone?'
+          messageBody: "Anyone?"
         },
         {
           hostel_id: 1,
           user_id: 4,
-          messageBody: 'Red Rocks Anyone?'
+          messageBody: "Red Rocks Anyone?"
         },
         {
           hostel_id: 1,
           user_id: 5,
-          messageBody: 'I want to go to red rocks'
+          messageBody: "I want to go to red rocks"
         },
         {
           hostel_id: 1,
           user_id: 7,
-          messageBody: 'Does anyone want to go ski/snowboard?'
+          messageBody: "Does anyone want to go ski/snowboard?"
         },
         {
           hostel_id: 1,
           user_id: 6,
-          messageBody: 'What is the easiest resort to get to from Denver?'
+          messageBody: "What is the easiest resort to get to from Denver?"
         },
         {
           hostel_id: 1,
           user_id: 6,
-          messageBody: 'I really want to go to Trinidad (said nobody ever)'
+          messageBody: "I really want to go to Trinidad (said nobody ever)"
         },
       ]);
     });

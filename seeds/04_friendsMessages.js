@@ -7,7 +7,7 @@ exports.seed = function (knex, Promise) {
       return knex('friendsMessages').insert([
         {
           friends_id: 1,
-          message_body: 'Hey Kate, where are you now?'
+          message_body: "Hey Kate, where are you now?"
         },
         {
           friends_id: 2,
@@ -15,19 +15,19 @@ exports.seed = function (knex, Promise) {
         },
         {
           friends_id: 3,
-          message_body: 'Hey Phil, how is Galvanize?'
+          message_body: "Hey Phil, how is Galvanize?"
         },
         {
           friends_id: 4,
-          message_body: 'Daniel how did you make these sweet logos!?'
+          message_body: "Daniel how did you make these sweet logos!?"
         },
         {
           friends_id: 5,
-          message_body: 'Hey James, are you still stick?'
+          message_body: "Hey James, are you still stick?"
         },
         {
           friends_id: 6,
-          message_body: 'Good morning love, where in the world are you now?'
+          message_body: "Good morning love, where in the world are you now?"
         },
       ]);
     });

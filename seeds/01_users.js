@@ -13,7 +13,7 @@ exports.seed = function (knex, Promise) {
           about_me: "I am a Colorado Native who is excited to travel, meet new people, and experience new cultures!",
           travel_status: true,
           checkin_status: false,
-          whats_app_number: '19708193277',
+          whats_app_number: "19708193277",
         },
         {
           first_name: "Apple",
@@ -26,7 +26,7 @@ exports.seed = function (knex, Promise) {
           about_me: "I am an Apple employee, who I hope will soon be reviewing my app",
           travel_status: true,
           checkin_status: false,
-          whats_app_number: '18283329878',
+          whats_app_number: "18283329878",
         },
         {
           first_name: "Kate",
@@ -39,7 +39,7 @@ exports.seed = function (knex, Promise) {
           about_me: "Hi I am Kate",
           travel_status: true,
           checkin_status: true,
-          whats_app_number: '19283748293',
+          whats_app_number: "19283748293",
         },
         {
           first_name: "Beef",
@@ -52,7 +52,7 @@ exports.seed = function (knex, Promise) {
           about_me: "Hi I am Beef",
           travel_status: true,
           checkin_status: true,
-          whats_app_number: '18293237299',
+          whats_app_number: "18293237299",
         },
         {
           first_name: "Grant",
@@ -65,7 +65,7 @@ exports.seed = function (knex, Promise) {
           about_me: "Hi I am Grant",
           travel_status: true,
           checkin_status: true,
-          whats_app_number: '12238273299',
+          whats_app_number: "12238273299",
         },
         {
           first_name: "Phil",
@@ -78,7 +78,7 @@ exports.seed = function (knex, Promise) {
           about_me: "Hi I am Phil",
           travel_status: true,
           checkin_status: true,
-          whats_app_number: '19902388383',
+          whats_app_number: "19902388383",
         },
         {
           first_name: "Daniel",
@@ -91,7 +91,7 @@ exports.seed = function (knex, Promise) {
           about_me: "Hi I am Daniel",
           travel_status: true,
           checkin_status: true,
-          whats_app_number: '17389280394',
+          whats_app_number: "17389280394",
         },
         {
           first_name: "James",
@@ -104,7 +104,7 @@ exports.seed = function (knex, Promise) {
           about_me: "Hi I am James",
           travel_status: false,
           checkin_status: false,
-          whats_app_number: '18293238282',
+          whats_app_number: "18293238282",
         },
         {
           first_name: "Kylie",
@@ -117,7 +117,7 @@ exports.seed = function (knex, Promise) {
           about_me: "Hi I am Kylie",
           travel_status: true,
           checkin_status: true,
-          whats_app_number: '17045266868',
+          whats_app_number: "17045266868",
         },
         {
           first_name: "Kylie",
@@ -130,7 +130,7 @@ exports.seed = function (knex, Promise) {
           about_me: "Hi I am Kylie",
           travel_status: true,
           checkin_status: true,
-          whats_app_number: '17045266868',
+          whats_app_number: "17045266868",
         },
       ]);
     });
