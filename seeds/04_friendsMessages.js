@@ -1,10 +1,10 @@
 
 exports.seed = function (knex, Promise) {
   // Deletes ALL existing entries
-  return knex('table_name').del()
+  return knex('friendsMessages').del()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
+      return knex('friendsMessages').insert([
         {
           friends_id: 1,
           message_body: 'Hey Kate, where are you now?'
