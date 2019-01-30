@@ -50,7 +50,7 @@ module.exports = {
     },
     //Hostel messages queries
     getAllHostelMessages() {
-        return db.select().from('hostelMessages')
+        return db.select('users.first_name, users.last_name, users.profile_image, messageBody').from('hostelMessages').join('users', 'user_id', 'users.id')
     },
     getHostelMessageById(id) {
         return db('hostelMessages').where('id', id)

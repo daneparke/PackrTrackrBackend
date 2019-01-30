@@ -101,9 +101,9 @@ app.post('/userfriends', (req, res) => {
 app.delete('/userfriends/:id', (req, res) => {
     queries.deleteUserFriend(req.params.id).then(() => res.status(204).send())
 })
-app.put('/userfriends/:id', (req, res) => {
-    queries.editUserFriend(req.params.id, req.body).then(editUserFriend => res.json(editUserFriend))
-})
+// app.put('/userfriends/:id', (req, res) => {
+//     queries.editUserFriend(req.params.id, req.body).then(editUserFriend => res.json(editUserFriend))
+// })
 //Friends Messages
 app.get('/friendsmessages', (req, res) => {
     queries.getAllFriendsMessages().then(response => res.send(response))
@@ -141,51 +141,9 @@ app.put('/trips/:id', (req, res) => {
     queries.editTrip(req.params.id, req.body).then(editTrip => res.json(editTrip))
 })
 
-
-// app.delete('/users/:id', (req, res) => {
-//     queries.deleteUser(req.params.id).then(res.status(204).send())
-// })
-
-// app.get('/snacks', (req, res) => {
-//     queries.getAllSnacks().then(response => res.status(200).send(response))
-// })
-// app.get('/snacks/:id', (req, res) => {
-//     queries.getSnackById(req.params.id).then(snack => res.status(200).send(snack[0]))
-// })
-// app.post('/snacks', (req, res) => {
-//     queries.createSnack(req.body).then(snack => {
-//         res.send(snack)
-//     })
-// })
-// app.delete('/snacks/:id', (req, res) => {
-//     queries.deleteSnack(req.params.id).then(() => res.status(204).send())
-// })
-// app.put('/snacks/:id', (req, res) => {
-//     queries.editSnack(req.params.id, req.body).then(editSnack => res.json(editSnack))
-// })
-// app.get('/reviews', (req, res) => {
-//     queries.getAllReviews().then(response => res.send(response))
-// })
-// app.get('/reviews/:id', (req, res) => {
-//     queries.getReviewById(req.params.id).then(review => res.status(200).send(review[0]))
-// })
-// app.post('/reviews', (req, res) => {
-//     queries.createReview(req.body).then(review => {
-//         res.send(review)
-//     })
-// })
-// app.delete('/reviews/:id', (req, res) => {
-//     queries.deleteReview(req.params.id).then(() => res.status(204).send())
-// })
-// app.put('/reviews/:id', (req, res) => {
-//     queries.editReview(req.params.id, req.body).then(editReview => res.json(editReview))
-// })
-
-// app.get('*', (req, res) => {
-//     res.send('page not found: 404')
-// })
-
-
+app.get('*', (req, res) => {
+    res.send('page not found: 404')
+})
 
 const listener = () => console.log(`Listening on port ${port}`)
 app.listen(port, listener)
