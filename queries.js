@@ -33,8 +33,11 @@ module.exports = {
         return db('users').where('id', id).delete()
     },
     //Hostel user queries
-    getAllHostelUsers() {
-        return db.select().from('hostelUser')
+    // getAllHostelUsers() {
+    //     return db.select().from('hostelUser')
+    // },
+    getAllHostelUsers(hostel_id) {
+        return db.from('hostelUser').select('hostelUser.id', 'users.first_name', 'users.last_name', 'users.profile_image').join('users', 'user_id', 'users.id').where('hostel_id', hostel_id)
     },
     getHostelUserById(id) {
         return db('hostelUser').where('id', id)

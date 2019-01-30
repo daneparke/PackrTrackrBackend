@@ -50,8 +50,8 @@ app.put('/users/:id', (req, res) => {
 })
 
 //hostelUsers
-app.get('/hosteluser', (req, res) => {
-    queries.getAllHostelUsers().then(response => res.send(response))
+app.get('/hostels/:id/hosteluser', (req, res) => {
+    queries.getAllHostelUsers(req.params.id).then(response => res.send(response))
 })
 app.get('/hosteluser/:id', (req, res) => {
     queries.getHostelUserById(req.params.id).then(hostelUser => res.status(200).send(hostelUser[0]))
