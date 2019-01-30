@@ -49,8 +49,8 @@ module.exports = {
         return db('hostelUser').where('id', id).delete()
     },
     //Hostel messages queries
-    getAllHostelMessages() {
-        return db.select('users.first_name, users.last_name, users.profile_image, messageBody').from('hostelMessages').join('users', 'user_id', 'users.id')
+    getAllHostelMessages(hostel_id) {
+        return db.from('hostelMessages').select('messageBody', 'users.first_name', 'users.last_name', 'users.profile_image').join('users', 'user_id', 'users.id').where('hostel_id', hostel_id)
     },
     getHostelMessageById(id) {
         return db('hostelMessages').where('id', id)

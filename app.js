@@ -69,8 +69,8 @@ app.put('/hosteluser/:id', (req, res) => {
 })
 
 //Hostel Messages
-app.get('/hostelmessages', (req, res) => {
-    queries.getAllHostelMessages().then(response => res.send(response))
+app.get('/hostels/:id/hostelmessages', (req, res) => {
+    queries.getAllHostelMessages(req.params.id).then(response => res.send(response))
 })
 app.get('/hostelmessages/:id', (req, res) => {
     queries.getHostelMessageById(req.params.id).then(hostelMessage => res.status(200).send(hostelMessage[0]))
