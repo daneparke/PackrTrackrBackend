@@ -87,8 +87,8 @@ app.put('/hostelmessages/:id', (req, res) => {
     queries.editHostelMessage(req.params.id, req.body).then(editHostelMessage => res.json(editHostelMessage))
 })
 //User Friends
-app.get('/userfriends', (req, res) => {
-    queries.getAllUserFriends().then(response => res.send(response))
+app.get('/users/:id/userfriends', (req, res) => {
+    queries.getAllUserFriends(req.params.id).then(response => res.send(response))
 })
 app.get('/userfriends/:id', (req, res) => {
     queries.getUserFriendById(req.params.id).then(userFriend => res.status(200).send(userFriend[0]))
