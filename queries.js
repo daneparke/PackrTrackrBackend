@@ -68,7 +68,7 @@ module.exports = {
     // getAllUserFriends() {
     //     return db.select().from('userFriends')
     // },
-    getAllHostelMessages(user_id) {
+    getAllUserFriends(user_id) {
         return db.from('userFriends').select('pending_friendship', 'userFriends.id', 'users.travel_status', 'users.first_name', 'users.last_name', 'users.profile_image').join('users', 'friend_id', 'users.id').where('user_id', user_id)
     },
     getUserFriendById(id) {
