@@ -113,7 +113,7 @@ exports.seed = function (knex, Promise) {
           password: "password",
           country: "Italy",
           admin: false,
-          profile_image: "https://randomuser.me/api/portraits/women/12.jpg",
+          profile_image: "https://www.operationsmile.org/sites/default/files/styles/facebook_og_image/public/images/profile/profile_image/Kylie_Ryan_ISLC_Ireland_2014.jpg?itok=kfhqW6df",
           about_me: "Hi I am Kylie",
           travel_status: true,
           checkin_status: true,
